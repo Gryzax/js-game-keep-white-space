@@ -42,3 +42,4 @@ jobs:
                     echo "::error:: Test KO"
                   fi
               run: npm audit
+              #end
