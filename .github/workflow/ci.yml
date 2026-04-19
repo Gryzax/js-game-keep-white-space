@@ -20,12 +20,12 @@ jobs:
             - run: npm install
 
             - name: linter
-              run: npx eslint
+              run: npx eslint .
               continue-on-error: true
 
             - name: linter results
               run: |
-                  if npx eslint; then 
+                  if npx eslint .; then 
                     echo "::notice:: Linter OK"
                   else 
                     echo "::error:: Linter KO"
@@ -41,5 +41,5 @@ jobs:
                   else 
                     echo "::error:: Test KO"
                   fi
-              run: npm audit
-              #end
+
+            - run: npm audit
