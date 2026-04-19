@@ -30,7 +30,7 @@ jobs:
                   else 
                     echo "::error:: Linter KO"
                   fi
-            - name: test 
+            - name: test
               run: npm test
               continue-on-error: true
 
