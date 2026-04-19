@@ -4,7 +4,8 @@
     "description": "",
     "main": "main.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "lint": "eslint *.js"
     },
     "repository": {
         "type": "git",
@@ -19,6 +20,8 @@
     },
     "homepage": "https://github.com/Gryzax/js-game-keep-white-space#readme",
     "devDependencies": {
+        "eslint": "^8.57.1",
+        "eslint-config-google": "^0.14.0",
         "jest": "^30.3.0"
     }
 }
